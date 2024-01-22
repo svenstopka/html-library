@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Page Form</title>
+
+    <link rel="stylesheet" href="style/default.css" />
+  </head>
+  <body>
+    <form action="" id="multipageform">
+      <fieldset class="page">
+        <legend>Name</legend>
+        <p><input type="text" placeholder="Vorname" /></p>
+        <p><input type="text" placeholder="Nachname" /></p>
+      </fieldset>
+      <fieldset class="page">
+        <legend>Adresse</legend>
+        <p><input type="text" placeholder="Straße" /></p>
+        <p><input type="text" placeholder="Ort" /></p>
+      </fieldset>
+      <fieldset class="page">
+        <legend>Kontakt</legend>
+        <p><input type="email" placeholder="E-Mail" /></p>
+        <p><input type="tel" placeholder="Tel. Nr" /></p>
+      </fieldset>
+      <div id="indicatorBox"></div>
+      <div id="controls">
+        <div>
+          <button type="button" id="prevPage" onclick="nextFormPage(-1)">
+            Zurück
+          </button>
+        </div>
+        <div id="pageNumber"></div>
+        <div>
+          <button type="button" id="nextPage" onclick="nextFormPage(1)">
+            Weiter
+          </button>
+        </div>
+      </div>
+    </form>
+    <script src="./js/main.js?v=22"></script>
+  </body>
+</html>
