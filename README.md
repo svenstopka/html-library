@@ -3,8 +3,8 @@ Various reusable HTML things I didn't just want to copy-paste from the web.
 
 ## Index
 
-### Multipage Form
+### Multipage Form `multipageform`
 splits up a form into multiple pages
 
-### FAQ
+### FAQ `faq`
 gives an openable FAQ to reduce visual clutter
